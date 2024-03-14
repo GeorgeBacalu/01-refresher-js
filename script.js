@@ -41,3 +41,11 @@ const hobbies = [...hobbies1, ...hobbies2];
 console.log(`Hobbies: ${hobbies}`);
 console.log(`Upper hobbies: ${hobbies.map(item => item.toUpperCase())}`);
 console.log(`Reading index: ${hobbies.findIndex(item => item === "reading")}`);
+
+function run() {
+  function displayMessage(messageCallback) {
+    messageCallback();
+  }
+  displayMessage(() => console.log("Hi!"));
+}
+run();
